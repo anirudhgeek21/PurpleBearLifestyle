@@ -1,9 +1,11 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from 'cors';
-import { PORT, mongoDBURL } from './config.js';
-import { Item } from './models/Items.js';
+import { Item } from '../models/Items.js';
 
+export const PORT = 3002;
+
+export const mongoDBURL = 'mongodb+srv://anirudh_prajapati:anirudh21042004@purplebear.qpfdjcj.mongodb.net/?retryWrites=true&w=majority&appName=PurpleBear'
 
 const app = express();
 
