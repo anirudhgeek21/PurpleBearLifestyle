@@ -9,8 +9,8 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-    origin: ["https://purple-bear-lifestyle.vercel.app"],
-    methods: ["GET", "POST"],
+    origin: "https://purple-bear-lifestyle.vercel.app",
+    methods: ["POST"],
     credentials: true
   }));
 
