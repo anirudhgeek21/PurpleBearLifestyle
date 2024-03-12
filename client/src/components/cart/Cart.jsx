@@ -48,7 +48,7 @@ export default function Cart( ) {
             >
 
                 <div className="description font-light mb-2 hover:m-[-2%] hover:mb-2 duration-200" >
-                <img src={card.image} className="hover:w-[120%] hue-rotate-15 hover:hue-rotate-0" alt="" />
+                <img src={card.image} className="hue-rotate-15 hover:hue-rotate-0" alt="" />
                 </div>
 
                 <div className="title font-light font-sans tracking-wider text-lg md:text-xl text-black text-center mb-0">
@@ -63,7 +63,7 @@ export default function Cart( ) {
             ))}
             </div>
 
-            <div className="md:w-[30%] w-[90%] mx-auto border-[0.5px] border-black rounded-md mt-3 mb-20 px-5 py-7">
+            <div className="md:w-[30%] w-[90%] mx-auto border-[0.5px] border-black rounded-md mt-3 mb-10 px-5 py-7">
                 <div className="text-xl font-thin text-center">Summary</div>
                 <div className="flex flex-col w-[95%] mx-auto mt-5">
                 <div className="flex justify-between">
@@ -87,10 +87,14 @@ export default function Cart( ) {
                         <div>200</div>
                     </div>
                     <div className="flex justify-between mt-3">
-                        <div className="font-black">Total</div>
-                        <div className="font-black">10000</div>
+                        <div className="font-semibold">Total</div>
+                        <div className="font-semibold">10000</div>
                     </div>
                 </div>
+            </div>
+
+            <div className="button w-[7%] rounded-md mx-auto text-center py-1 border-[0.05px] border-black hover:bg-black hover:text-white duration-200 font-thin hover:font-normal">
+                <button className="hover:text-white">Order Now</button>
             </div>
         </Fragment>
 

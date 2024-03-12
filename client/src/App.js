@@ -7,6 +7,8 @@ import Upload from './components/Upload';
 import { CartProvider } from './components/CartContext';
 import Newproduct from './components/addItem/Newproduct';
 import Cart from './components/cart/Cart';
+import Login from './components/login/login';
+import Signup from './components/signup/signup';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
                   <Route path="/" element={<Wall />} />
                   <Route path="/cart" element={<Cart />} />
                   <Route path="/newitem" element={<Newproduct />} />
+                  <Route path="/login" element={<Login />} />
+                  <Route path="/signup" element={<Signup />} />
                 </Routes>
               </div>
             </div>

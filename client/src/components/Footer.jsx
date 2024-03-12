@@ -29,7 +29,7 @@ export default function Footer() {
 
                 
                 
-                <div className="flex flex-col md:mt-0 mt-6">
+                <div className="flex flex-col md:mt-0 mt-7">
                     <div className="md:font-thin text-base font-light">
                         RETURN / EXCHANGE ORDER
                     </div>
@@ -48,7 +48,7 @@ export default function Footer() {
 
 
 
-                <div className="flex flex-col md:mt-0 mt-6">
+                <div className="flex flex-col md:mt-0 mt-7">
                     <div className="md:font-thin text-base font-light">
                         CUSTOMER CARE
                     </div>

@@ -97,7 +97,7 @@ export default function Wall() {
                 //   addToCart(card);
                 //   toggleAlert();
                 // }}
-                className="border-fuchsia-900 border-[0.1px] text-black hover:border-fuchsia-800 hover:bg-black hover:text-white font-light px-4 py-1 text-sm mt-2 rounded-md"
+                className="border-fuchsia-900 border-[0.1px] text-black hover:border-fuchsia-800 hover:bg-black hover:text-white font-light px-4 py-1 text-sm mt-2 rounded-md duration-200"
               >
                 + Add to Cart
               </button>
@@ -136,7 +136,7 @@ export default function Wall() {
                 //   addToCart(card);
                 //   toggleAlert();
                 // }}
-                className="border-fuchsia-900 border-[0.1px] text-black hover:border-fuchsia-800 hover:bg-black hover:text-white font-light px-4 py-1 text-sm mt-2 rounded-md"
+                className="border-fuchsia-900 border-[0.1px] text-black hover:border-fuchsia-800 hover:bg-black hover:text-white font-light px-4 py-1 text-sm mt-2 rounded-md duration-200"
               >
                 + Add to Cart
               </button>
