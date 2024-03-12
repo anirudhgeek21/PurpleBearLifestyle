@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from 'cors';
-import { Item } from '../models/Items.js';
+import { Item } from './models/Items.js';
 
 export const PORT = 3002;
 
