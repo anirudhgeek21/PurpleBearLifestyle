@@ -15,7 +15,7 @@ export default function Newproduct() {
         try {
 
             const body = { image , name, description , price , itemid , category };
-            const response = await fetch('http://localhost:3002/items', {
+            const response = await fetch('https://purple-bear-lifestyle-backend.vercel.app/items', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(body),
