@@ -1,27 +1,63 @@
-import React , { Fragment } from "react";
+import React , { Fragment , useState } from "react";
 
 export default function Newproduct() {
+
+    const [image,setImage] = useState("");
+    const [name,setName] = useState("");
+    const [description,setDescription] = useState("");
+    const [price,setPrice] = useState("");
+    const [itemid,setItemid] = useState("");
+    const [category,setCategory] = useState("");
+
+
+    const onSubmitForm = async(e) => {
+        e.preventDefault();
+        try {
+
+            const body = { image , name, description , price , itemid , category };
+            const response = await fetch('http://localhost:3002/items', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(body),
+            });
+        
+            window.location = '/';
+            
+        } catch (error) {
+            console.log(error.message);
+        }
+    }
     
     return(
         <Fragment>
             <div className="text-black pt-10 md:w-[40%] w-[90%] text-3xl font-thin mx-auto text-center ">Add A new product</div>
             <div className="flex flex-col items-center justify-center md:w-[50%] w-[100%] mx-auto">
-                <form className="rounded-lg p-6 md:w-[100%] w-[90%]"
+                <form className="rounded-lg p-6 md:w-[100%] w-[90%]" onSubmit={onSubmitForm}
                 >
                     <div className="mb-4">
                         
                         <input type="text" id="image" placeholder="Image Link *" className="w-full border rounded-md p-2 focus:outline-none text-center border-blue-500 bg-black text-white font-extrabold" 
+                            value={image}
+                            onChange={(e) => setImage(e.target.value)}
+                            required
                         />
                     </div>
 
                     <div className="mb-4">
                         
-                        <input type="text" id="title" placeholder="Name *" className="w-full border rounded-md p-2 focus:outline-none text-center border-blue-500 bg-black text-white font-extrabold" 
+                        <input type="text" id="name" placeholder="Name *" className="w-full border rounded-md p-2 focus:outline-none text-center border-blue-500 bg-black text-white font-extrabold" 
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            required
                         />
                     </div>
                     <div className="mb-2">
                         
                         <textarea id="description" placeholder="Description" className="w-full border rounded-md p-2 focus:outline-none border-blue-500 bg-black text-[#CDF5FD] font-extralight text-center" rows="1"
+                            value={description}
+                            onChange={(e) => setDescription(e.target.value)}
+                         
+                        
                         >
 
                         </textarea>
@@ -30,12 +66,27 @@ export default function Newproduct() {
                     <div className="mb-4">
                         
                         <input type="text" id="price" placeholder="Price *" className="w-full border rounded-md p-2 focus:outline-none text-center border-blue-500 bg-black text-white font-extrabold" 
+                            value={price}
+                            onChange={(e) => setPrice(e.target.value)}
+                            required
+                        />
+                    </div>
+
+
+                    <div className="mb-4">
+                        
+                        <input type="text" id="itemid" placeholder="Itemid *" className="w-full border rounded-md p-2 focus:outline-none text-center border-blue-500 bg-black text-white font-extrabold" 
+                            value={itemid}
+                            onChange={(e) => setItemid(e.target.value)}
+                           
+                        
                         />
                     </div>
 
                                 <div className=" flex md:w-[100%] w-full mx-auto">
                                     <select name="category" id="category" className="w-[100%] text-center text-md font-extralight py-2 bg-black text-sky-100 border rounded-md border-blue-500"
-                                    
+                                        value={category}
+                                        onChange={(e) => setCategory(e.target.value)}
                                     >
                                         <option value="general">Select One Category</option>
                                         

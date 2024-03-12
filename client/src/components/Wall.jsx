@@ -12,16 +12,16 @@ export default function Wall() {
   const [showAlert, setShowAlert] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
 
-  const toggleAlert = () => {
-    setShowAlert(!showAlert);
-    setTimeout(() => {
-      setShowAlert(false);
-    }, 3000); // Hide the alert after 3 seconds
-  };
+  // const toggleAlert = () => {
+  //   setShowAlert(!showAlert);
+  //   setTimeout(() => {
+  //     setShowAlert(false);
+  //   }, 3000); // Hide the alert after 3 seconds
+  // };
 
-  const toggleCart = () => {
-    setCartOpen(!cartOpen);
-  };
+  // const toggleCart = () => {
+  //   setCartOpen(!cartOpen);
+  // };
 
   const dummyCards = [
     {
@@ -64,13 +64,13 @@ export default function Wall() {
       <div className="md:mt-9 mt-4">
         <Category />
       </div>
-      <Cart cartItems={cartItems} isOpen={cartOpen} />
+      {/* <Cart cartItems={cartItems} isOpen={cartOpen} />
       {showAlert && (
         <Alert
           message="Item added to cart!"
           onClose={() => setShowAlert(false)}
         />
-      )}
+      )} */}
       
       <div className="bg-white grid grid-cols-2 md:grid-cols-5 gap-0 md:mx-8 mx-2 md:mt-9 mt-5">
         {dummyCards.map((card) => (
@@ -93,10 +93,10 @@ export default function Wall() {
             </div>
             <div className="text-center">
               <button
-                onClick={() => {
-                  addToCart(card);
-                  toggleAlert();
-                }}
+                // onClick={() => {
+                //   addToCart(card);
+                //   toggleAlert();
+                // }}
                 className="border-fuchsia-900 border-[0.1px] text-black hover:border-fuchsia-800 hover:bg-black hover:text-white font-light px-4 py-1 text-sm mt-2 rounded-md"
               >
                 + Add to Cart
@@ -132,10 +132,10 @@ export default function Wall() {
             </div>
             <div className="text-center">
               <button
-                onClick={() => {
-                  addToCart(card);
-                  toggleAlert();
-                }}
+                // onClick={() => {
+                //   addToCart(card);
+                //   toggleAlert();
+                // }}
                 className="border-fuchsia-900 border-[0.1px] text-black hover:border-fuchsia-800 hover:bg-black hover:text-white font-light px-4 py-1 text-sm mt-2 rounded-md"
               >
                 + Add to Cart
@@ -144,14 +144,14 @@ export default function Wall() {
           </div>
         ))}
       </div>
-      <div className="fixed bottom-10 right-10">
+      {/* <div className="fixed bottom-10 right-10">
         <button
           onClick={toggleCart}
           className="border-blue-500 z-[2000%] border-[2px] bg-black font-light px-4 py-2 text-xl mt-6 rounded-md text-white"
         >
           {cartOpen ? "Close Cart" : "Open Cart"}
         </button>
-      </div>
+      </div> */}
     </Fragment>
   );
 }

@@ -17,15 +17,15 @@ export default function Navigation() {
                     
                 </div>
                 <div className="flex justify-around items-center ">
-                    <div className="px-3 text-lg font-light ">
-                        <Link to="/" className="text-[#1B0044] mt-auto">Wall</Link>
+                    <div className="px-3 text-lg font-extralight hover:font-light ">
+                        <Link to="/" className="text-[#1B0044] mt-auto">Home</Link>
                     </div>
                     
-                    <div className="px-3 text-lg font-light ">
+                    <div className="px-3 text-lg font-extralight hover:font-light ">
                         <Link to="/cart" className="text-[#1B0044] mt-auto">Cart</Link>
                     </div>
 
-                    <div className="px-3 text-lg font-light ">
+                    <div className="px-3 text-lg font-extralight hover:font-light ">
                         <Link to="/newitem" className="text-[#1B0044] mt-auto">Add</Link>
                     </div>
                     

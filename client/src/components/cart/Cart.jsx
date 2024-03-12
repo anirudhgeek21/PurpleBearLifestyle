@@ -37,7 +37,7 @@ export default function Cart( ) {
       ];
     return(
         <Fragment>
-            <div className="font-light text-3xl text-center pt-10">Your Cart</div>
+            <div className="font-thin text-3xl text-center pt-10">Your Cart</div>
 
             <div className="bg-white grid grid-cols-2 md:grid-cols-5 gap-0 md:mx-8 mx-2 md:mt-7 mt-5">
             {dummyCards.map((card) => (
@@ -63,8 +63,8 @@ export default function Cart( ) {
             ))}
             </div>
 
-            <div className="md:w-[30%] w-[90%] mx-auto border-[1px] border-black rounded-md mt-3 mb-20 px-5 py-7">
-                <div className="text-xl font-black text-center">Summary</div>
+            <div className="md:w-[30%] w-[90%] mx-auto border-[0.5px] border-black rounded-md mt-3 mb-20 px-5 py-7">
+                <div className="text-xl font-thin text-center">Summary</div>
                 <div className="flex flex-col w-[95%] mx-auto mt-5">
                 <div className="flex justify-between">
                         <div className="font-semibold">Items</div>
