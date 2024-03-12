@@ -1,4 +1,5 @@
 import React ,{Fragment} from "react";
+import { Link } from "react-router-dom";
 
 export default function Signup() {
     return(
@@ -25,6 +26,10 @@ export default function Signup() {
                             <button className="hover:text-white">Join</button>
                         </div>
 
+
+                        <div className="text-base mt-6 font-thin">
+                            Already a customer ? <Link to="/login" className="text-blue-700 mt-auto">Login</Link>
+                        </div>
                     </div>
                     
                 </form>

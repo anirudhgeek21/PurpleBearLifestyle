@@ -1,4 +1,5 @@
 import React ,{Fragment} from "react";
+import { Link } from "react-router-dom";
 
 export default function Login() {
     return(
@@ -19,6 +20,10 @@ export default function Login() {
                         </div>
                         <div className="button md:w-[7%] w-[14%] rounded-md mx-auto mt-6 py-1 border-[0.05px] border-black hover:bg-black hover:text-white duration-200 font-thin hover:font-normal">
                             <button className="hover:text-white">Login</button>
+                        </div>
+
+                        <div className="text-base mt-6 font-thin">
+                            Not joined us yet ? <Link to="/signup" className="text-blue-700 mt-auto">Signup</Link>
                         </div>
 
                     </div>
