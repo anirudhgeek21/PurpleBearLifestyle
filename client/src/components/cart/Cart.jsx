@@ -51,11 +51,11 @@ export default function Cart( ) {
                 <img src={card.image} className="hue-rotate-15 hover:hue-rotate-0" alt="" />
                 </div>
 
-                <div className="title font-light font-sans tracking-wider text-lg md:text-xl text-black text-center mb-0">
+                <div className="title font-light font-sans tracking-wider text-sm md:text-xl text-black text-center mb-0">
                 <h1>{card.title}</h1>
                 </div>
                 
-                <div className="file text-center font-light text-sm text-black">
+                <div className="file text-center font-bold md:text-sm text-[0.7rem] text-black">
                 <p>${card.price}</p>
                 </div>
                 
@@ -93,7 +93,7 @@ export default function Cart( ) {
                 </div>
             </div>
 
-            <div className="button w-[7%] rounded-md mx-auto text-center py-1 border-[0.05px] border-black hover:bg-black hover:text-white duration-200 font-thin hover:font-normal">
+            <div className="button md:w-[7%] w-[30%] rounded-md mx-auto text-center py-1 border-[0.05px] border-black hover:bg-black hover:text-white duration-200 font-thin hover:font-normal">
                 <button className="hover:text-white">Order Now</button>
             </div>
         </Fragment>

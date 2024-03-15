@@ -84,11 +84,11 @@ export default function Wall() {
               <img src={card.image} className="hover:w-[120%] hue-rotate-15 hover:hue-rotate-0" alt="" />
             </div>
 
-            <div className="title font-light font-sans tracking-wider text-lg md:text-xl text-black text-center mb-0">
+            <div className="title font-light font-sans tracking-wider text-sm md:text-xl text-black text-center mb-0">
               <h1>{card.title}</h1>
             </div>
             
-            <div className="file text-center font-light text-sm text-black">
+            <div className="file text-center font-bold md:text-sm text-[0.7rem] text-black">
               <p>${card.price}</p>
             </div>
             <div className="text-center">
@@ -97,7 +97,7 @@ export default function Wall() {
                 //   addToCart(card);
                 //   toggleAlert();
                 // }}
-                className="border-fuchsia-900 border-[0.1px] text-black hover:border-fuchsia-800 hover:bg-black hover:text-white font-light px-4 py-1 text-sm mt-2 rounded-md duration-200"
+                className="border-fuchsia-900 border-[0.1px] text-black hover:border-fuchsia-800 hover:bg-black hover:text-white font-light px-4 py-1 md:text-sm text-xs mt-2 rounded-md duration-200"
               >
                 + Add to Cart
               </button>
@@ -123,11 +123,11 @@ export default function Wall() {
               <img src={card.image} className="hover:w-[120%] hue-rotate-15 hover:hue-rotate-0" alt="" />
             </div>
 
-            <div className="title font-light font-sans tracking-wider text-lg md:text-xl text-black text-center mb-0">
+            <div className="title font-light font-sans tracking-wider text-sm md:text-xl text-black text-center mb-0">
               <h1>{card.title}</h1>
             </div>
             
-            <div className="file text-center font-light text-sm text-black">
+            <div className="file text-center font-bold md:text-sm text-[0.7rem] text-black">
               <p>${card.price}</p>
             </div>
             <div className="text-center">
@@ -136,7 +136,7 @@ export default function Wall() {
                 //   addToCart(card);
                 //   toggleAlert();
                 // }}
-                className="border-fuchsia-900 border-[0.1px] text-black hover:border-fuchsia-800 hover:bg-black hover:text-white font-light px-4 py-1 text-sm mt-2 rounded-md duration-200"
+                className="border-fuchsia-900 border-[0.1px] text-black hover:border-fuchsia-800 hover:bg-black hover:text-white font-light px-4 py-1 md:text-sm text-xs mt-2 rounded-md duration-200"
               >
                 + Add to Cart
               </button>
